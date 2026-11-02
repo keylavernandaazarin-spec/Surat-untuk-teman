@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesan Spesial Untuk Teman</title>
+    <!-- Google Fonts untuk tipografi yang estetik -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Sacramento&display=swap" rel="stylesheet">
+    
+    <!-- Menghubungkan file CSS eksternal -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Hiasan latar belakang berbentuk lingkaran lembut -->
+    <div class="background-decorations">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+
+    <!-- Kontainer Kartu Utama -->
+    <div class="card-container">
+        
+        <!-- Area Slider Pesan -->
+        <div class="slider-wrapper">
+            
+            <!-- Slide 1 -->
+            <div class="slide active">
+                <span class="emoji-icon">👋</span>
+                <h2>Hai, Sahabatku!</h2>
+                <p>Aku cuma mau ngingetin kamu lewat halaman kecil ini, kalau kehadiranmu di hidupku itu berarti banget. Terima kasih sudah jadi teman yang luar biasa!</p>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slide">
+                <span class="emoji-icon">🌟</span>
+                <h2>Tempat Cerita</h2>
+                <p>Terima kasih ya sudah selalu ada, baik di saat senang maupun waktu lagi banyak pikiran. Punya teman sepertimu adalah salah satu hal paling beruntung.</p>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="slide">
+                <span class="emoji-icon">🚀</span>
+                <h2>Semangat Terus ya!</h2>
+                <p>Apapun mimpimu saat ini, aku selalu percaya sama kemampuan kamu. Jangan gampang menyerah, ya. Kamu pasti bisa melewati semuanya!</p>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="slide">
+                <span class="emoji-icon">💖</span>
+                <h2>Virtual Hug!</h2>
+                <p>Jaga kesehatanmu baik-baik dan jangan lupa bahagia hari ini. Kalau butuh teman ngobrol atau makan bareng, kabari aku kapanpun ya!</p>
+            </div>
+
+        </div>
+
+        <!-- Indikator Dots (Titik-titik Navigasi) -->
+        <div class="dots-container" id="dotsContainer">
+            <!-- Dibuat otomatis lewat JavaScript -->
+        </div>
+
+        <!-- Tombol Navigasi -->
+        <div class="nav-buttons">
+            <button class="btn" id="prevBtn" onclick="changeSlide(-1)">Sebelumnya</button>
+            <button class="btn" id="nextBtn" onclick="changeSlide(1)">Selanjutnya</button>
+        </div>
+
+    </div>
+
+    <!-- Menghubungkan file JavaScript eksternal -->
+    <script src="script.js"></script>
+</body>
+</html>
